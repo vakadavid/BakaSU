@@ -5,6 +5,7 @@
 #include <linux/vmalloc.h>
 #include <linux/mutex.h>
 
+#include "ss/avtab.h"
 #include "ss/constraint.h"
 #include "ss/ebitmap.h"
 #include "ss/hashtab.h"
