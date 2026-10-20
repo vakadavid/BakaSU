@@ -865,14 +865,6 @@ private fun ModuleList(
             ?.takeIf { it.isNotBlank() }
             ?.let { "su:$it" }
         openShortcutDialogForType(shortcutType)
-        if (module.hasActionScript && module.hasWebUi) {
-            selectedShortcutType = null
-            openShortcutDialogForType(ShortcutType.Action)
-        } else if (module.hasActionScript) {
-            openShortcutDialogForType(ShortcutType.Action)
-        } else if (module.hasWebUi) {
-            openShortcutDialogForType(ShortcutType.WebUI)
-        }
     }
 
     PullToRefreshBox(
